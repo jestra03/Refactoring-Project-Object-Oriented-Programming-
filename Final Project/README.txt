@@ -35,12 +35,13 @@ There are 9 entities, which act according to the following rules:
     * Is a protesting entity whose behavior counteracts the actions of the dude entity.
     * Has two modes: protestor mode and treehugger mode 
     * Treehugger mode: Navigates to the nearest tree to body block dude entities from chopping it.
-    * Protestor mode: Navigates to the closest house and body blocks dude entities
-    * Hippies are spawned as the result of a mouse click triggering a world event
-    * Any tree a hippie touches will turn gold and increase in health
-    * Hippies regenerate a tree if they are next to it
-    * Hippies leave a trail of symbols on the grass they walk on
+        • Any tree a hippie touches will turn gold and increase in health
+        • Hippies regenerate a tree if they are next to it
+    * Protestor mode: Navigates to the closest house and body blocks dude entities.
+        • Hippies leave a trail of symbols on the grass they walk on
+    * spawned from a world event
     
 WORLD EVENT:
     * In the event of a mouse click, a peace symbol will spawn on the tile chosen
     * One to two hippies are spawned as a result of the mouse click
+    
