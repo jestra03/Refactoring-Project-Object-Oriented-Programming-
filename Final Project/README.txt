@@ -44,4 +44,3 @@ There are 9 entities, which act according to the following rules:
 WORLD EVENT:
     * In the event of a mouse click, a peace symbol will spawn on the tile chosen
     * One to two hippies are spawned as a result of the mouse click
-
