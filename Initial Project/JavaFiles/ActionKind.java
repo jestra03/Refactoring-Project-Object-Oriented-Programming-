@@ -1,0 +1,3 @@
+enum ActionKind {
+    ACTIVITY, ANIMATION
+}

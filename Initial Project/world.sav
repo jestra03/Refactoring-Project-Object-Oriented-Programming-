@@ -1,0 +1,212 @@
+Comment:
+    This file is parsed line by line to gather the data of a saved state for any world.
+    The headers must be on their own lines.
+    The "Rows:" header expects the next line to be an integer number of rows for the world.
+    The "Cols:" header expects the next line to be an integer number of cols for the world.
+    The "Backgrounds:" header expects a numRows x numCols grid of background id's,
+      which each correspond to their position in the world.
+    The "Entities:" header expects each following line until the next header to describe an entity.
+    The format for this is as follows:
+      KEY ID X_POSITION Y_POSITION [rest]
+      where the values in rest depend on the key.
+      Here is the table to describe those values:
+        dude [id] [x] [y] ACTION_PERIOD ANIMATION_PERIOD LIMIT
+        tree [id] [x] [y] ANIMATION_PERIOD ACTION_PERIOD HEALTH
+        fairy [id] [x] [y] ANIMATION_PERIOD ACTION_PERIOD
+        obstacle [id] [x] [y] ANIMATION_PERIOD
+        sapling [id] [x] [y] HEALTH
+        house [id] [x] [y]
+        stump [id] [x] [y]
+      Each Entity in this world.sav file has no id, so theres just two spaces between the x and y.
+Rows:
+    30
+Cols:
+    40
+Backgrounds:
+grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass flowers grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass
+grass flowers flowers flowers flowers flowers grass grass grass grass grass grass grass grass grass grass flowers flowers grass grass flowers grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass flowers
+grass flowers flowers flowers flowers flowers grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass
+grass flowers flowers flowers dirt_horiz flowers grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass
+grass grass flowers flowers dirt_vert_left flowers grass grass grass grass grass grass grass grass grass grass grass grass grass flowers grass grass grass grass grass grass grass flowers grass flowers grass grass grass grass grass grass grass grass grass grass
+grass grass grass grass dirt_vert_left grass grass flowers grass grass grass grass grass grass grass grass grass grass grass grass flowers grass grass grass grass grass grass grass flowers grass grass grass grass grass grass grass grass grass grass grass
+flowers grass grass grass dirt_bot_right_up flowers flowers flowers flowers flowers flowers flowers flowers flowers flowers flowers grass grass grass grass flowers flowers grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass
+grass flowers flowers flowers dirt_vert_right grass grass grass grass grass grass grass grass grass grass flowers grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass
+grass grass grass grass bridge grass grass flowers grass grass flowers flowers flowers grass grass grass flowers flowers flowers grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass
+flowers grass grass grass bridge dirt flowers flowers flowers flowers flowers flowers flowers flowers flowers grass grass grass flowers grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass
+grass flowers flowers flowers dirt_vert_left flowers grass grass grass grass grass grass grass grass flowers flowers grass grass flowers flowers grass grass grass flowers grass grass grass grass grass grass grass grass grass flowers flowers flowers flowers flowers flowers flowers
+grass grass grass flowers dirt_vert_left grass grass grass grass grass grass grass grass grass grass grass flowers grass grass grass flowers flowers grass grass grass grass flowers grass grass grass flowers grass grass grass grass grass flowers flowers flowers flowers
+grass grass grass grass dirt_vert_left grass grass grass grass grass grass grass grass grass grass grass flowers grass grass grass grass flowers flowers grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass flowers flowers
+grass grass grass grass dirt_vert_left grass grass grass grass grass grass grass grass grass grass grass flowers flowers flowers grass grass grass flowers flowers grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass flowers
+grass grass grass grass dirt_vert_left grass grass grass grass grass grass grass grass grass grass grass grass grass grass flowers grass grass grass flowers grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass flowers
+grass grass grass grass dirt_vert_left dirt_horiz grass grass grass grass grass grass grass grass grass grass grass grass grass flowers flowers grass grass flowers flowers grass grass grass grass grass grass grass grass grass grass grass grass grass grass flowers
+grass grass grass grass grass dirt_vert_left grass grass grass grass grass grass grass grass grass grass grass grass grass grass flowers grass grass grass flowers grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass
+grass grass grass grass grass dirt_vert_left grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass flowers grass grass grass flowers flowers grass grass grass grass grass grass grass grass grass grass flowers flowers flowers
+grass grass grass grass grass dirt_vert_left grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass flowers flowers grass grass grass flowers flowers flowers flowers flowers grass grass grass flowers flowers flowers flowers grass grass
+grass grass grass grass grass dirt_vert_left grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass flowers flowers grass grass grass grass grass grass flowers flowers flowers flowers flowers grass bridge bridge grass grass
+grass grass grass grass grass dirt_vert_left dirt_bot_left_corner grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass flowers flowers grass grass grass grass grass grass grass grass grass grass grass bridge flowers grass flowers
+grass grass grass grass grass grass dirt_vert_left_bot dirt_bot_left_corner grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass flowers flowers flowers flowers flowers flowers grass grass grass grass grass grass flowers flowers flowers flowers
+grass grass grass grass grass grass grass dirt_vert_left_bot dirt_horiz dirt_horiz dirt_horiz dirt_horiz dirt_horiz dirt_horiz dirt_horiz dirt_horiz dirt_horiz dirt_horiz dirt_horiz dirt_horiz dirt_horiz dirt_horiz dirt_horiz dirt_horiz dirt_horiz dirt_horiz dirt_horiz dirt_horiz dirt_horiz flowers flowers flowers flowers flowers flowers flowers flowers grass grass grass
+grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass dirt_vert_left grass grass grass grass grass dirt_vert_left grass grass grass grass grass grass grass grass grass grass grass
+grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass dirt_vert_left grass grass grass grass grass dirt_vert_left dirt_horiz dirt_bot_left_corner grass grass grass grass grass grass grass grass grass
+flowers grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass flowers flowers dirt_vert_left flowers grass grass grass grass grass grass dirt_vert_right grass grass grass grass grass grass grass grass flowers
+flowers flowers grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass flowers flowers flowers dirt_bot_right_up flowers grass grass grass grass grass grass dirt_vert_left_bot dirt_horiz dirt_horiz dirt_horiz dirt_horiz dirt_horiz grass grass flowers flowers
+flowers flowers flowers grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass flowers flowers flowers flowers grass grass grass grass grass grass grass grass grass grass grass grass grass grass flowers flowers
+flowers flowers flowers grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass grass flowers flowers grass flowers grass grass grass grass grass grass grass grass grass grass grass grass grass flowers flowers flowers
+flowers flowers flowers flowers flowers flowers grass grass grass grass grass grass grass grass grass grass grass grass grass grass flowers grass grass grass grass grass grass grass grass grass grass grass grass grass flowers flowers grass flowers flowers flowers
+Entities:
+    tree  35 27 0.256 1.168 2
+    tree  35 25 0.144 1.266 2
+obstacle  13 07 1.126
+   fairy  00 00 0.123 0.123
+    tree  00 02 0.501 1.289 2
+obstacle  17 09 1.105
+    tree  30 06 0.050 1.006 2
+   fairy  28 04 0.123 0.123
+obstacle  09 07 1.159
+    tree  05 00 0.451 1.315 2
+obstacle  17 10 1.047
+obstacle  11 08 1.049
+    tree  01 15 0.052 1.371 1
+obstacle  36 19 1.021
+    tree  11 13 0.472 1.006 2
+obstacle  10 08 1.055
+obstacle  33 20 1.153
+    tree  07 05 0.504 1.382 2
+obstacle  12 07 1.109
+obstacle  02 09 1.091
+obstacle  35 19 1.184
+obstacle  14 07 1.135
+obstacle  23 17 1.140
+obstacle  22 16 1.185
+obstacle  22 14 1.108
+obstacle  36 20 1.104
+    tree  18 04 0.513 1.330 2
+    tree  02 25 0.093 1.041 2
+    tree  26 01 0.129 1.231 1
+    tree  01 01 0.419 1.335 1
+    tree  16 04 0.187 1.253 2
+    tree  07 03 0.438 1.354 2
+    tree  27 08 0.160 1.328 1
+obstacle  39 18 1.086
+obstacle  17 11 1.165
+obstacle  11 07 1.197
+obstacle  05 09 1.154
+obstacle  20 12 1.135
+obstacle  34 21 1.107
+    dude  22 26 0.787 0.180 04
+obstacle  29 20 1.001
+    tree  07 00 0.522 1.352 1
+    tree  03 00 0.185 1.387 1
+    tree  01 03 0.357 1.164 2
+obstacle  15 08 1.158
+obstacle  14 08 1.097
+    tree  10 13 0.262 1.205 1
+    tree  27 10 0.346 1.361 1
+    tree  02 04 0.114 1.088 1
+    tree  03 24 0.162 1.314 1
+    tree  01 02 0.553 1.206 1
+obstacle  24 18 1.038
+   fairy  39 29 0.123 0.123
+obstacle  21 14 1.040
+obstacle  21 16 1.053
+    tree  06 03 0.516 1.068 2
+    tree  25 26 0.542 1.190 1
+obstacle  05 07 1.193
+obstacle  29 19 1.149
+    tree  13 15 0.203 1.381 2
+obstacle  28 20 1.113
+obstacle  28 19 1.017
+    tree  06 02 0.554 1.165 1
+obstacle  09 08 1.042
+obstacle  31 20 1.140
+    tree  18 00 0.294 1.045 2
+    tree  31 07 0.391 1.024 2
+obstacle  24 17 1.083
+obstacle  25 19 1.072
+obstacle  21 13 1.006
+    dude  35 26 0.784 0.180 04
+    tree  19 01 0.300 1.154 1
+    tree  08 01 0.106 1.269 1
+obstacle  18 12 1.190
+obstacle  35 21 1.147
+    tree  37 27 0.367 1.195 2
+obstacle  18 11 1.089
+obstacle  05 08 1.097
+   house  36 26
+obstacle  00 08 1.018
+obstacle  00 07 1.141
+    tree  25 04 0.198 1.106 2
+obstacle  33 21 1.192
+obstacle  30 20 1.105
+    tree  27 02 0.544 1.354 2
+    tree  24 26 0.527 1.389 1
+obstacle  21 15 1.166
+obstacle  22 15 1.101
+obstacle  32 20 1.171
+obstacle  13 08 1.025
+obstacle  38 18 1.091
+obstacle  31 21 1.060
+obstacle  24 19 1.048
+obstacle  19 12 1.175
+obstacle  06 08 1.038
+obstacle  16 09 1.190
+obstacle  27 19 1.116
+    tree  37 26 0.055 1.260 2
+obstacle  07 08 1.156
+obstacle  19 13 1.010
+   house  03 3
+    tree  27 01 0.384 1.266 2
+obstacle  25 20 1.156
+obstacle  02 08 1.156
+   house  21 26
+obstacle  06 07 1.167
+obstacle  35 20 1.093
+obstacle  30 21 1.143
+    tree  01 14 0.366 1.165 2
+obstacle  26 20 1.082
+obstacle  12 08 1.148
+    tree  06 22 0.328 1.155 2
+    tree  25 27 0.471 1.004 1
+obstacle  17 12 1.145
+obstacle  03 08 1.019
+obstacle  27 20 1.161
+obstacle  16 10 1.083
+obstacle  10 07 1.063
+    tree  24 05 0.328 1.194 2
+    tree  05 21 0.550 1.278 1
+    tree  26 26 0.339 1.113 1
+    tree  04 25 0.170 1.038 1
+    tree  36 25 0.124 1.283 1
+obstacle  08 08 1.017
+    tree  08 03 0.406 1.186 1
+obstacle  25 18 1.125
+    tree  37 25 0.186 1.219 2
+obstacle  22 17 1.052
+    tree  23 04 0.419 1.128 2
+obstacle  01 08 1.041
+    dude  04 03 0.848 0.180 03
+obstacle  19 11 1.071
+    tree  17 03 0.061 1.050 1
+obstacle  01 09 1.112
+   fairy  13 10 0.123 0.123
+obstacle  38 19 1.098
+obstacle  23 18 1.079
+obstacle  20 13 1.075
+obstacle  23 16 1.101
+obstacle  15 09 1.118
+obstacle  07 07 1.183
+    tree  25 05 0.330 1.328 1
+obstacle  34 20 1.014
+obstacle  03 09 1.199
+    tree  17 04 0.111 1.206 1
+obstacle  20 14 1.140
+    tree  24 04 0.182 1.027 2
+    tree  36 27 0.150 1.230 2
+    dude  06 21 0.720 0.180 04
+    tree  26 09 0.594 1.345 1
+obstacle  08 07 1.101
+    tree  11 14 0.173 1.274 1
+    tree  31 06 0.069 1.273 1
+obstacle  26 19 1.057
+    tree  05 05 0.545 1.343 1
+obstacle  32 21 1.139
