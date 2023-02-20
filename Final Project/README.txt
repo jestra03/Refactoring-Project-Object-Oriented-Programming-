@@ -3,7 +3,7 @@ CSC 203, Fall '22
 
 Simulation Rules:
 
-There are 8 entities, which act according to the following rules:
+There are 9 entities, which act according to the following rules:
 1. HOUSE: 
     * Remains static.  Does not animate or complete any actions.  
     * Is the destination for DUDE_FULL entities
@@ -31,3 +31,16 @@ There are 8 entities, which act according to the following rules:
 8. TREE
     * animates and has health
     * if it's health is depleted it with transform into a STUMP entity.
+9. HIPPIE:
+    * Is a protesting entity whose behavior counteracts the actions of the dude entity.
+    * Has two modes: protestor mode and treehugger mode 
+    * Treehugger mode: Navigates to the nearest tree to body block dude entities from chopping it.
+    * Protestor mode: Navigates to the closest house and body blocks dude entities
+    * Hippies are spawned as the result of a mouse click triggering a world event
+    * Any tree a hippie touches will turn gold and increase in health
+    * Hippies regenerate a tree if they are next to it
+    * Hippies leave a trail of symbols on the grass they walk on
+    
+WORLD EVENT:
+    * In the event of a mouse click, a peace symbol will spawn on the tile chosen
+    * One to two hippies are spawned as a result of the mouse click
